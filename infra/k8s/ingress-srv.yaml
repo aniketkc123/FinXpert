@@ -1,0 +1,65 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-srv
+  namespace: expensio-dev
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600" # Ensures long-lived WebSocket connections
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600" # Same for sending data
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "3600"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: expensio.com
+      http:
+        paths:
+          - path: /api/user
+            pathType: Prefix
+            backend:
+              service:
+                name: user-srv
+                port:
+                  number: 3000
+          - path: /api/expense
+            pathType: Prefix
+            backend:
+              service:
+                name: expense-srv
+                port:
+                  number: 3000
+          - path: /api/financial-data
+            pathType: Prefix
+            backend:
+              service:
+                name: financial-data-srv
+                port:
+                  number: 3000
+          - path: /api/income
+            pathType: Prefix
+            backend:
+              service:
+                name: income-srv
+                port:
+                  number: 3000
+          - path: /api/dashboard
+            pathType: Prefix
+            backend:
+              service:
+                name: dashboard-srv
+                port:
+                  number: 3000
+          - path: /api/smart-ai
+            pathType: Prefix
+            backend:
+              service:
+                name: smart-ai-srv
+                port:
+                  number: 3000
+          - path: /ws/smart-chat
+            pathType: Prefix
+            backend:
+              service:
+                name: smart-ai-srv
+                port:
+                  number: 3000

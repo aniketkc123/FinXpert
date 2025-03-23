@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: income-depl
+  namespace: expensio-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: income
+  template:
+    metadata:
+      labels:
+        app: income
+    spec:
+      containers:
+        - name: income
+          image: ashuz057/expensio-income
+          env:
+            - name: SERVICE_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: income-secret
+                  key: SERVICE_NAME
+            - name: KAFKA_BROKER_URL
+              valueFrom:
+                secretKeyRef:
+                  name: shared-secret
+                  key: KAFKA_BROKER_URL
+            - name: MONGO_URI
+              valueFrom:
+                secretKeyRef:
+                  name: income-secret
+                  key: MONGO_URI
+            - name: PORT
+              valueFrom:
+                secretKeyRef:
+                  name: income-secret
+                  key: PORT
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: shared-secret
+                  key: JWT_SECRET
+            - name: NODE_ENV
+              valueFrom:
+                secretKeyRef:
+                  name: financial-data-secret
+                  key: NODE_ENV
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: income-srv
+  namespace: expensio-dev
+spec:
+  selector:
+    app: income
+  ports:
+    - name: income
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

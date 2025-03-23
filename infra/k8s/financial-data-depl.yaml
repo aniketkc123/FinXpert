@@ -1,0 +1,68 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: financial-data-depl
+  namespace: expensio-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: financial-data
+  template:
+    metadata:
+      labels:
+        app: financial-data
+    spec:
+      containers:
+        - name: financial-data
+          image: ashuz057/expensio-financial-data
+          env:
+            - name: SERVICE_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: financial-data-secret
+                  key: SERVICE_NAME
+            - name: KAFKA_BROKER_URL
+              valueFrom:
+                secretKeyRef:
+                  name: shared-secret
+                  key: KAFKA_BROKER_URL
+            - name: MONGO_URI
+              valueFrom:
+                secretKeyRef:
+                  name: financial-data-secret
+                  key: MONGO_URI
+            - name: PORT
+              valueFrom:
+                secretKeyRef:
+                  name: financial-data-secret
+                  key: PORT
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: shared-secret
+                  key: JWT_SECRET
+            - name: SMART_AI_SERVICE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: shared-secret
+                  key: SMART_AI_SERVICE_URL
+            - name: NODE_ENV
+              valueFrom:
+                secretKeyRef:
+                  name: financial-data-secret
+                  key: NODE_ENV
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: financial-data-srv
+  namespace: expensio-dev
+spec:
+  selector:
+    app: financial-data
+  ports:
+    - name: financial-data
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

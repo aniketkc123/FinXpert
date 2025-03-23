@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: expense-depl
+  namespace: expensio-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: expense
+  template:
+    metadata:
+      labels:
+        app: expense
+    spec:
+      containers:
+        - name: expense
+          image: ashuz057/expensio-expense
+          env:
+            - name: SERVICE_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: expense-secret
+                  key: SERVICE_NAME
+            - name: KAFKA_BROKER_URL
+              valueFrom:
+                secretKeyRef:
+                  name: shared-secret
+                  key: KAFKA_BROKER_URL
+            - name: MONGO_URI
+              valueFrom:
+                secretKeyRef:
+                  name: expense-secret
+                  key: MONGO_URI
+            - name: PORT
+              valueFrom:
+                secretKeyRef:
+                  name: expense-secret
+                  key: PORT
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: shared-secret
+                  key: JWT_SECRET
+            - name: NODE_ENV
+              valueFrom:
+                secretKeyRef:
+                  name: expense-secret
+                  key: NODE_ENV
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: expense-srv
+  namespace: expensio-dev
+spec:
+  selector:
+    app: expense
+  ports:
+    - name: expense
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
