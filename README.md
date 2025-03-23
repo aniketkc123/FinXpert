@@ -1,22 +1,7 @@
-# Expensio
+# FinXpert
 
-[![Live App](https://img.shields.io/badge/Live_App-expensio.codelikh.com-brightgreen)](https://expensio.codelikh.com)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/ashuTew01/expensio-2.0-main)
-[![Technical Blog](https://img.shields.io/badge/Read-Technical_Blog-red)](https://shorturl.at/Sk4jx)
-[![YouTube Demo](https://img.shields.io/badge/Watch-YouTube_Demo-red)](https://youtu.be/i2YwiRFxRBk)
 
-**Expensio** is a cutting-edge financial management platform that offers users deep insights into their spending habits, financial behavior, and the psychology behind their expenses. Transitioned from a monolithic application to a fully deployed, production-grade **microservices architecture**, Expensio leverages advanced technologies like **Kafka**, **Kubernetes**, **Google Cloud Platform**, **MongoDB**, and **PostgreSQL** to provide a highly scalable, resilient, and user-friendly experience.
-
----
-
-## 📢 Live Demo
-
-- **Live Application**: [expensio.codelikh.com](https://expensio.codelikh.com)
-- **Technical Blog**: [Building Expensio - The Journey](https://shorturl.at/Sk4jx)
-- **YouTube Demo**: [Expensio Live Demo](https://youtu.be/i2YwiRFxRBk)
-- **GitHub Repository**: [Expensio 2.0](https://github.com/ashuTew01/expensio-2.0-main)
-
----
+**FinXpert** is a cutting-edge financial management platform that offers users deep insights into their spending habits, financial behavior, and the psychology behind their expenses. Transitioned from a monolithic application to a fully deployed, production-grade **microservices architecture**, Expensio leverages advanced technologies like **Kafka**, **Kubernetes**, **Google Cloud Platform**, **MongoDB**, and **PostgreSQL** to provide a highly scalable, resilient, and user-friendly experience.
 
 ## 📑 Table of Contents
 
@@ -74,7 +59,7 @@
 
 ## 🏗 Architecture Overview
 
-Expensio's architecture is built around microservices, each responsible for specific functionalities and communicating asynchronously through Kafka. The entire system is orchestrated using Kubernetes on Google Cloud Platform, ensuring high availability and scalability.
+FinXpert's architecture is built around microservices, each responsible for specific functionalities and communicating asynchronously through Kafka. The entire system is orchestrated using Kubernetes on Google Cloud Platform, ensuring high availability and scalability.
 
 ![Architecture Diagram](https://miro.medium.com/v2/resize:fit:2000/format:webp/0*QtWI_1PCD9n_O8fn.png)
 
@@ -270,38 +255,3 @@ Expensio's architecture is built around microservices, each responsible for spec
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-## 🌟 Acknowledgements
-
-- **Hack36 Hackathon**:
-  - Provided the initial platform and inspiration for Expensio.
-- **YouTuber Ed Roh**:
-  - For UI inspiration that guided the frontend design.
-- **Open-Source Community**:
-  - For the amazing tools, libraries, and resources that made this project possible.
-
----
-
-## 📝 Further Reading
-
-- **Technical Blog**:
-  - [Building Expensio - The Journey](https://shorturl.at/Sk4jx)
-- **Monolithic Version**:
-  - [Expensio 1.0 Repository](https://github.com/ashuTew01/expensio)
-
----
-
-## 📬 Contact
-
-For any inquiries, feedback, or collaboration opportunities:
-
-- **Email**:
-  - [Email me](mailto:krishwave66@gmail.com)
-- **Project Issues**:
-  - [GitHub Issues](https://github.com/ashuTew01/expensio-2.0-main/issues)
-- **LinkedIn**:
-  - [Ashutosh Tewari](https://www.linkedin.com/in/ashutew0117)
-
----
-
-*Made with ❤️ by Ashutosh Tewari and Anubhav Pandey*
