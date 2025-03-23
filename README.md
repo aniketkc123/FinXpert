@@ -239,14 +239,7 @@ FinXpert's architecture is built around microservices, each responsible for spec
 
 ---
 
-## 🤝 Contributors
-
-- **Ashutosh Tewari**
-  - [GitHub](https://github.com/ashuTew01) | [LinkedIn](https://www.linkedin.com/in/ashutew0117/)
-- **Anubhav Pandey**
-  - [GitHub](https://github.com/anubhav2025) | [LinkedIn](https://www.linkedin.com/in/anubhav09/)
- 
-- Contributions are encouraged and welcome. We are looking for a mobile app developer for this app, so if you are interested, do contact us. 
+## 🤝 Contributors 
 
 ---
 
