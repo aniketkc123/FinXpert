@@ -1,7 +1,7 @@
 # FinXpert
 
 
-**FinXpert** is a cutting-edge financial management platform that offers users deep insights into their spending habits, financial behavior, and the psychology behind their expenses. Transitioned from a monolithic application to a fully deployed, production-grade **microservices architecture**, Expensio leverages advanced technologies like **Kafka**, **Kubernetes**, **Google Cloud Platform**, **MongoDB**, and **PostgreSQL** to provide a highly scalable, resilient, and user-friendly experience.
+**FinXpert** is a cutting-edge financial management platform that offers users deep insights into their spending habits, financial behavior, and the psychology behind their expenses. Transitioned from a monolithic application to a fully deployed, production-grade **microservices architecture**, FinXpert leverages advanced technologies like **Kafka**, **Kubernetes**, **Google Cloud Platform**, **MongoDB**, and **PostgreSQL** to provide a highly scalable, resilient, and user-friendly experience.
 
 ## 📑 Table of Contents
 

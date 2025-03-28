@@ -79,7 +79,7 @@ const HeroSection = () => {
 					}}
 				>
 					Empower Your Financial Future with{" "}
-					<span style={{ color: "#1E90FF" }}>Expensio</span>
+					<span style={{ color: "#1E90FF" }}>FinXpert</span>
 				</Typography>
 				<Typography
 					variant="h4"

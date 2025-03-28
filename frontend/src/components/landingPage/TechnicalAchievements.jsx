@@ -12,13 +12,13 @@ const techDetails = [
 	{
 		title: "Event-Driven Microservices Architecture with Kafka",
 		description:
-			"Expensio utilizes a microservices architecture with Kafka at its core, enabling efficient real-time event handling and ensuring that services operate independently for better scalability and performance.",
+			"FinXpert utilizes a microservices architecture with Kafka at its core, enabling efficient real-time event handling and ensuring that services operate independently for better scalability and performance.",
 		icon: <CodeIcon sx={{ fontSize: 50, color: "#1E90FF" }} />,
 	},
 	{
 		title: "Event Replay & Dead Letter Queue",
 		description:
-			"Expensio supports event replay for new services to catch up on historical data. Failed events are handled through a Dead Letter Queue, ensuring no data loss and robust system reliability.",
+			"FinXpert supports event replay for new services to catch up on historical data. Failed events are handled through a Dead Letter Queue, ensuring no data loss and robust system reliability.",
 		icon: <RepeatIcon sx={{ fontSize: 50, color: "#FF69B4" }} />,
 	},
 	{
@@ -30,13 +30,13 @@ const techDetails = [
 	{
 		title: "Kubernetes Orchestration",
 		description:
-			"Expensio is fully containerized using Docker and orchestrated with Kubernetes, allowing seamless scaling, stable deployments, and maintaining high availability even during peak loads.",
+			"FinXpert is fully containerized using Docker and orchestrated with Kubernetes, allowing seamless scaling, stable deployments, and maintaining high availability even during peak loads.",
 		icon: <CloudQueueIcon sx={{ fontSize: 50, color: "#28A745" }} />,
 	},
 	{
 		title: "OTP Authentication with Rate Limiting",
 		description:
-			"Expensio ensures secure account access through rate-limited OTP authentication, protecting users from brute-force attacks and ensuring data security with strong encryption and account lockout features.",
+			"FinXpert ensures secure account access through rate-limited OTP authentication, protecting users from brute-force attacks and ensuring data security with strong encryption and account lockout features.",
 		icon: <SecurityIcon sx={{ fontSize: 50, color: "#FFC107" }} />,
 	},
 ];

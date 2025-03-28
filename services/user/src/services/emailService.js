@@ -49,11 +49,11 @@ const sendVerificationEmailService = async (userId) => {
 	const emailVerificationLink = `${isProd ? "https" : "http"}://${isProd ? process.env.PROD_DOMAIN : `localhost:${process.env.PORT}`}/api/users/verify-email?token=${emailVerificationToken}`;
 
 	await sendEmail({
-		from: `"Expensio" <krishwave66@gmail.com>`,
+		from: `"FinXpert" <krishwave66@gmail.com>`,
 		to: user.email,
 		subject: "Please verify your email",
 		html: `
-            <h1>Welcome to Expensio!</h1>
+            <h1>Welcome to FinXpert!</h1>
             <p>Please click on the link below to verify your email address:</p>
             <a href="${emailVerificationLink}">Verify Email</a>
         `,

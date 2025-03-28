@@ -202,7 +202,7 @@ const EmailLoginPage = () => {
 					gutterBottom
 					sx={{ color: "#fff" }}
 				>
-					Welcome to Expensio
+					Welcome to FinXpert
 				</Typography>
 				<Typography
 					variant="body1"
