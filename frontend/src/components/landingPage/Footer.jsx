@@ -98,7 +98,7 @@ const Footer = () => {
 						</Typography>
 						<Box sx={{ display: "flex", alignItems: "center" }}>
 							<IconButton
-								href="https://www.linkedin.com/in/ashutew0117//"
+								href="https://www.linkedin.com/in/rahul-mahato-082631252/"
 								target="_blank"
 								rel="noopener noreferrer"
 								sx={{
@@ -111,7 +111,7 @@ const Footer = () => {
 								<LinkedInIcon />
 							</IconButton>
 							<IconButton
-								href="https://github.com/ashuTew01"
+								href="https://github.com/RahulMahato23"
 								target="_blank"
 								rel="noopener noreferrer"
 								sx={{
@@ -124,7 +124,7 @@ const Footer = () => {
 								<GitHubIcon />
 							</IconButton>
 							<IconButton
-								href="mailto:ashutew987@gmail.com"
+								href="mailto:mrahul230403@gmail.com"
 								sx={{
 									color: "#FFFFFF",
 									"&:hover": {
