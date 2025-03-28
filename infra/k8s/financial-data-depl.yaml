@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: financial-data
-          image: ashuz057/expensio-financial-data
+          image: karthiksp22/financial-data
           env:
             - name: SERVICE_NAME
               valueFrom:

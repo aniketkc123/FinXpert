@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: dashboard
-          image: ashuz057/expensio-dashboard
+          image: karthiksp22/finxpertmaindashboard
           env:
             - name: SERVICE_NAME
               valueFrom:

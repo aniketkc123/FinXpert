@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: user
-          image: ashuz057/expensio-user
+          image: karthiksp22/user
           env:
             - name: SERVICE_NAME
               valueFrom:

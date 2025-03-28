@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: expense
-          image: ashuz057/expensio-expense
+          image: karthiksp22/expense
           env:
             - name: SERVICE_NAME
               valueFrom:
