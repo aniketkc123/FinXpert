@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: financial-data-depl
-  namespace: expensio-dev
+  namespace: finxpert-dev
 spec:
   replicas: 1
   selector:
@@ -57,7 +57,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: financial-data-srv
-  namespace: expensio-dev
+  namespace: finxpert-dev
 spec:
   selector:
     app: financial-data

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: smart-ai-depl
-  namespace: expensio-dev
+  namespace: finxpert-dev
 spec:
   replicas: 1
   selector:
@@ -77,7 +77,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: smart-ai-srv
-  namespace: expensio-dev
+  namespace: finxpert-dev
 spec:
   selector:
     app: smart-ai

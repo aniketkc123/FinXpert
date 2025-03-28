@@ -14,7 +14,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: ashuz057/expensio-user
+    - image: karthiksp22/user
       context: ./services/user
       docker:
         dockerfile: Dockerfile
@@ -22,7 +22,7 @@ build:
         manual:
           - src: "src/**/*.js"
             dest: .
-    - image: ashuz057/expensio-expense
+    - image: karthiksp22/expense
       context: ./services/expense
       docker:
         dockerfile: Dockerfile
@@ -30,7 +30,7 @@ build:
         manual:
           - src: "src/**/*.js"
             dest: .
-    - image: ashuz057/expensio-financial-data
+    - image: karthiksp22/financial-data
       context: ./services/financial-data
       docker:
         dockerfile: Dockerfile
@@ -38,7 +38,7 @@ build:
         manual:
           - src: "src/**/*.js"
             dest: .
-    - image: ashuz057/expensio-income
+    - image: karthiksp22/income
       context: ./services/income
       docker:
         dockerfile: Dockerfile
@@ -46,7 +46,7 @@ build:
         manual:
           - src: "src/**/*.js"
             dest: .
-    - image: ashuz057/expensio-dashboard
+    - image: karthiksp22/finxpertmaindashboard
       context: ./services/dashboard
       docker:
         dockerfile: Dockerfile
@@ -54,7 +54,7 @@ build:
         manual:
           - src: "src/**/*.js"
             dest: .
-    - image: ashuz057/expensio-smart-ai
+    - image: karthiksp22/smart-ai
       context: ./services/smart-ai
       docker:
         dockerfile: Dockerfile

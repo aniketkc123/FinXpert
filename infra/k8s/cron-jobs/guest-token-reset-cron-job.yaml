@@ -2,7 +2,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: guest-token-reset-cron-job
-  namespace: expensio-dev
+  namespace: finxpert-dev
 spec:
   schedule: "30 20 * * *" # 2 AM IST (8:30 PM UTC)
   jobTemplate:

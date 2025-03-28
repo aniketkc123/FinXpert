@@ -30,7 +30,7 @@ fi
 check_rollout_status() {
   local deployment_name=$1
   echo -e "${GREEN}Waiting for ${deployment_name} to roll out...${NC}"
-  sudo kubectl rollout status deployment/${deployment_name} -n expensio-dev
+  sudo kubectl rollout status deployment/${deployment_name} -n finxpert-dev
   if [ $? -ne 0 ]; then
     echo -e "${RED}Deployment ${deployment_name} failed. Exiting...${NC}"
     exit 1
@@ -43,12 +43,12 @@ check_rollout_status() {
 check_service_readiness() {
   local pod_label=$1
   local port=$2
-  local pod_name=$(sudo kubectl get pod -l app=${pod_label} -n expensio-dev -o jsonpath="{.items[0].metadata.name}")
+  local pod_name=$(sudo kubectl get pod -l app=${pod_label} -n finxpert-dev -o jsonpath="{.items[0].metadata.name}")
 
   echo -e "${GREEN}Checking if ${pod_label} is ready on port ${port}...${NC}"
   for i in {1..10}; do
     echo -e "${GREEN}Attempt $i: Checking port ${port} on pod ${pod_name}...${NC}"
-    sudo kubectl exec -n expensio-dev ${pod_name} -- nc -zv localhost ${port}
+    sudo kubectl exec -n finxpert-dev ${pod_name} -- nc -zv localhost ${port}
     if [ $? -eq 0 ]; then
       echo -e "${GREEN}${pod_label} is ready and accepting connections on port ${port}.${NC}"
       return 0

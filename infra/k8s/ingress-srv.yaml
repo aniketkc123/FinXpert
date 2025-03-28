@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-srv
-  namespace: expensio-dev
+  namespace: finxpert-dev
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "3600" # Ensures long-lived WebSocket connections
@@ -11,7 +11,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: expensio.com
+    - host: finxpert.com
       http:
         paths:
           - path: /api/user
