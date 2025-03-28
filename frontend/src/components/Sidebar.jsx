@@ -145,9 +145,6 @@ const Sidebar = ({
 									}}
 								>
 									FinXpert{" "}
-									<span style={{ color: "#1E90FF", letterSpacing: "0.25px" }}>
-										(BETA)
-									</span>
 								</Typography>
 								{/* if mobile, display a close button */}
 								{!isNonMobile && (

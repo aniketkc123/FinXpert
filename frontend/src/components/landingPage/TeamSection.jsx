@@ -11,23 +11,13 @@ import {
 import { motion } from "framer-motion";
 import { styled } from "@mui/system";
 
+// We will add afterwards as we have 10 members rn
 const teamMembers = [
 	{
-		name: "Ashutosh Tewari",
-		role: "Lead Developer",
-		description:
-			"A software developer with a passion for all things Computer Science. Proficient in Development, Cloud, System Design & Architecture, and Software Engineering. Currently pursuing B.Tech. from NIT Allahabad (Final Year) as of 2024.",
-		imageUrl: "https://iili.io/dyCTYoF.jpg",
-		linkedIn: "https://www.linkedin.com/in/ashutew0117/",
+		// Team Member 1
 	},
 	{
-		name: "Anubhav Pandey",
-		role: "Lead Developer",
-		description:
-			"An Expert in full-stack development, a Geek of Computer Science and a passionate learner with a knack for problem-solving. Currently pursuing B.Tech. from NIT Allahabad (Final Year) as of 2024.",
-		imageUrl:
-			"https://media.licdn.com/dms/image/v2/D4D03AQFjIJ-YNA2Xfg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669239318984?e=1733961600&v=beta&t=5DqTRzx3QxCiblPt9hu0KTOHZTii4S2pGkgkn83FNn8",
-		linkedIn: "https://www.linkedin.com/in/anubhav09/",
+		// Team Member 2
 	},
 ];
 
