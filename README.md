@@ -61,7 +61,7 @@
 
 FinXpert's architecture is built around microservices, each responsible for specific functionalities and communicating asynchronously through Kafka. The entire system is orchestrated using Kubernetes on Google Cloud Platform, ensuring high availability and scalability.
 
-![Architecture Diagram](https://miro.medium.com/v2/resize:fit:2000/format:webp/0*QtWI_1PCD9n_O8fn.png)
+![Architecture Diagram](images/architecture.png)
 
 - **Microservices**:
   - **User Service**: Manages user authentication and profiles.
