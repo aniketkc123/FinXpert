@@ -217,9 +217,6 @@ FinXpert's architecture is built around microservices, each responsible for spec
 ---
 
 ## 🎮 Usage
-
-- **Access the Application**:
-  - Visit [expensio.codelikh.com](https://expensio.codelikh.com) in your browser.
 - **Create an Account**:
   - If you want to simply test things out, login as a guest and try the app.
   - Sign up using your email and complete OTP authentication.
