@@ -35,13 +35,13 @@ const Footer = () => {
 								mb: 2,
 							}}
 						>
-							EXPENSIO
+							FinXpert
 						</Typography>
 						<Typography
 							variant="body2"
 							sx={{ color: "#B0B0B0", lineHeight: "1.6" }}
 						>
-							Expensio is an advanced financial management platform leveraging
+							FinXpert is an advanced financial management platform leveraging
 							cutting-edge technologies to provide unparalleled insights into
 							your financial behavior.
 						</Typography>
@@ -147,7 +147,7 @@ const Footer = () => {
 					}}
 				>
 					<Typography variant="body2" sx={{ color: "#B0B0B0" }}>
-						© {new Date().getFullYear()} Expensio. All rights reserved.
+						© {new Date().getFullYear()} FinXpert. All rights reserved.
 					</Typography>
 				</Box>
 			</Container>

@@ -12,13 +12,13 @@ import { motion } from "framer-motion";
 const features = [
 	{
 		title: "Revolutionary Financial Insights at Your Fingertips",
-		description: `Expensio doesn’t just track your expenses—it revolutionizes how you understand your finances. Get real-time, beautifully visualized insights that show you exactly where your money is going, helping you take full control of your financial destiny like never before.`,
+		description: `FinXpert doesn’t just track your expenses—it revolutionizes how you understand your finances. Get real-time, beautifully visualized insights that show you exactly where your money is going, helping you take full control of your financial destiny like never before.`,
 		icon: <InsightsIcon sx={{ fontSize: 50, color: "#1E90FF" }} />, // Changed to InsightsIcon
 	},
 	{
 		title: "Unlock the Secrets of Your Spending Habits",
 		description:
-			"Ever wonder why you spend the way you do? Expensio decodes the psychology behind your purchases with cutting-edge Cognitive Trigger Analysis. Discover how subtle factors like social influence or impulse buying drive your decisions—and how to master them for ultimate financial freedom.",
+			"Ever wonder why you spend the way you do? FinXpert decodes the psychology behind your purchases with cutting-edge Cognitive Trigger Analysis. Discover how subtle factors like social influence or impulse buying drive your decisions—and how to master them for ultimate financial freedom.",
 		icon: <PsychologyIcon sx={{ fontSize: 50, color: "#FF5733" }} />, // Changed to PsychologyIcon
 	},
 	{
@@ -30,7 +30,7 @@ const features = [
 	{
 		title: "Tailored Financial Strategies with Summaries",
 		description:
-			"Experience a financial summary like never before. Expensio analyzes your spending, moods, and cognitive triggers to create a dynamic, actionable view of your financial behavior. Whether saving or cutting expenses, Expensio offers targeted strategies through visually stunning summaries, empowering you to make smarter decisions.",
+			"Experience a financial summary like never before. FinXpert analyzes your spending, moods, and cognitive triggers to create a dynamic, actionable view of your financial behavior. Whether saving or cutting expenses, FinXpert offers targeted strategies through visually stunning summaries, empowering you to make smarter decisions.",
 		icon: <BarChartIcon sx={{ fontSize: 50, color: "#FFC107" }} />, // Changed to BarChartIcon
 	},
 	{

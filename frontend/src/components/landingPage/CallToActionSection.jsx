@@ -69,7 +69,7 @@ const CallToActionSection = () => {
 					>
 						Join{" "}
 						<span style={{ color: "#1E90FF", fontWeight: "bold" }}>
-							Expensio
+							FinXpert
 						</span>{" "}
 						today and unlock the power of advanced financial management. Dive
 						deep into your spending habits, set ambitious goals, and let our

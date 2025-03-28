@@ -15,7 +15,7 @@ echo "     ╚══════╝╚═╝  ╚═╝╚═╝     ╚══�
 echo "                                                                      "
 
 
-echo -e "${GREEN}********************** STARTING EXPENSIO BACKEND DEPLOYMENT **********************${NC}"
+echo -e "${GREEN}********************** STARTING FinXpert BACKEND DEPLOYMENT **********************${NC}"
 
 # Check if the secrets folder exists
 if [ -d "./secrets" ]; then
@@ -125,4 +125,4 @@ echo -e "${GREEN}Ingress deployed.${NC}"
 
 echo -e "${GREEN}**************** DEPLOYING INGRESS DONE ******************${NC}"
 
-echo -e "${GREEN}**************** EXPENSIO BACKEND DEPLOYMENT COMPLETE ******************${NC}"
+echo -e "${GREEN}**************** FinXpert BACKEND DEPLOYMENT COMPLETE ******************${NC}"

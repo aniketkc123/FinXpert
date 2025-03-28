@@ -23,7 +23,7 @@ const AddGoalScreen = () => {
 							padding: "10px 20px",
 						}}
 					>
-						EXPENSIO
+						FinXpert
 					</Button>
 				</Box>
 			</FlexBetween>

@@ -99,7 +99,7 @@ const Header = () => {
 							},
 						}}
 					>
-						EXPENSIO{" "}
+						FinXpert{" "}
 						<span style={{ color: "#1E90FF", letterSpacing: "0.25px" }}>
 							(BETA)
 						</span>

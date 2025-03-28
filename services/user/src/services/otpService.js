@@ -71,9 +71,9 @@ export const handleSendOTPService = async (phone, email) => {
 	const environment = process.env.NODE_ENV;
 	if (email) {
 		await sendEmail({
-			from: `"Expensio" <krishwave66@gmail.com>`,
+			from: `"FinXpert" <krishwave66@gmail.com>`,
 			to: email,
-			subject: "Expensio: OTP for Login",
+			subject: "FinXpert: OTP for Login",
 			html: otpMailHtmlTemplate(otp),
 		});
 	}

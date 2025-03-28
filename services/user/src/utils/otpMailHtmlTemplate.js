@@ -4,7 +4,7 @@ export const otpMailHtmlTemplate = (otp) => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Expensio OTP</title>
+    <title>Your FinXpert OTP</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,7 +62,7 @@ export const otpMailHtmlTemplate = (otp) => {
 <body>
     <div class="email-container">
         <div class="header">
-            Expensio: One-Time Password (OTP)
+            FinXpert: One-Time Password (OTP)
         </div>
         <div class="content">
             <p class="message">Your login OTP is:</p>
@@ -70,8 +70,8 @@ export const otpMailHtmlTemplate = (otp) => {
             <p class="warning">Please do not share this OTP with anyone.</p>
         </div>
         <div class="footer">
-            <p>Thank you for using Expensio.</p>
-            <p>&copy; ${new Date().getFullYear()} Expensio. All rights reserved.</p>
+            <p>Thank you for using FinXpert.</p>
+            <p>&copy; ${new Date().getFullYear()} FinXpert. All rights reserved.</p>
         </div>
     </div>
 </body>

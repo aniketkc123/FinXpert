@@ -320,7 +320,7 @@ export const handleUseFinancialDataService = async (
 		);
 
 		const compactFinancialDataString = response.data.data;
-		const prompt = `You're Expensio's mature, witty, and intelligent financial assistant. Today is ${formattedDate}. 
+		const prompt = `You're FinXpert's mature, witty, and intelligent financial assistant. Today is ${formattedDate}. 
 			      Look at the conversation history above and the financial data below to return a response for user's query: 
 				  Here is the financial data of the given months, remember that for future queries: \n${compactFinancialDataString}.
 			`;
