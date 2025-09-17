@@ -22,7 +22,7 @@ for service in "${services[@]}"; do
     echo "     ╚══════╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝ ╚═════╝    "
     echo "                                                                      "
 
-    echo "Building Docker image for $service..."
+    echo "Building Docker images for $service..."
 
     # Build the Docker image for the service
     docker build -t ashuz057/expensio-$service:latest "$service_dir"
